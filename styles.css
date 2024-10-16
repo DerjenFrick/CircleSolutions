@@ -1,58 +1,57 @@
-h1, h2, h3, h4, h5, h6, p, span, a, li, button
-{
+h1, h2, h3, h4, h5, h6, p, span, a, li, button {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-header
-{
+
+header {
     align-items: center;
     justify-content: space-between;
     display: flex;
     padding: 20px;
     margin: 0;
-    background-color:#2B5261 ;
+    background-color: #2B5261;
 }
-#navBar
-{
+
+#navBar {
     display: flex;
     justify-content: flex-end;
     width: 100%;
 }
-#navBar ul
-{
+
+#navBar ul {
     display: flex;
     list-style-type: none;
     justify-content: flex-end;
     gap: 20px;
     padding: 0;
 }
-#navBar ul li
-{
+
+#navBar ul li {
     display: inline-block;
 }
-.AboutSec
-{
+
+.AboutSec {
     text-align: center;
     padding: 50px 0;
 }
-.AboutSec h1
-{
+
+.AboutSec h1 {
     font-size: 3rem;
 }
-.AboutSec p
-{
+
+.AboutSec p {
     font-size: 1.2rem;
     margin-bottom: 40px;
 }
-.employee-cards
-{
+
+.employee-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     justify-content: center;
     padding: 0 20px;
 }
-.employee-card
-{
+
+.employee-card {
     background-color: #2a4756;
     border-radius: 10px;
     padding: 20px;
@@ -60,15 +59,71 @@ header
     flex-direction: column;
     align-items: center;
 }
-.employee-photo
-{
+
+.employee-photo {
     width: 100%;
     padding-bottom: 150px;
     background-color: #cccccc;
     border-radius: 8px;
     margin-bottom: 20px;
 }
-.employee-info p
-{
+
+.employee-info p {
     font-size: 1.1rem;
+}
+
+.ContactSec {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #1e3a47;
+    color: white;
+}
+
+.ContactSec h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.ContactSec form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.ContactSec input[type="text"],
+.ContactSec input[type="email"],
+.ContactSec textarea {
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #2a4756;
+    color: white;
+}
+
+.ContactSec button[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5193a1;
+    color: white;
+    cursor: pointer;
+}
+
+.ContactSec button[type="submit"]:hover {
+    background-color: #397280;
+}
+
+.success {
+    color: #4CAF50;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.error {
+    color: #f44336;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
 }

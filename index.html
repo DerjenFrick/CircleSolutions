@@ -11,89 +11,105 @@
     <h4>LOGO</h4>
     <div id="navBar" class = "hidden">
         <ul>
-            <li >
+            <li>
                 <div class="dropContent">
                     <li><a href="#HomeSec">Home</a></li>
                     <li><a href="#ServiceSec">Services</a></li>
                     <li><a href="#AboutSec">About</a></li>
                 </div>
             </li>
-                <li class="dropdown">
+            <li class="dropdown">
                 <a href="btnDrop">Languages</a>
-                    <div class="dropContent">
-                        <form action="language.php">
-                            <button type="submit" name="lang" value="en">English</button>
-                            <button type="submit" name="lang" value="nl">Dutch</button>
-                            <button type="submit" name="lang" value="de">German</button>
-                        </form>
-                    </div>
-                 </li>
+                <div class="dropContent">
+                    <form action="language.php">
+                        <button type="submit" name="lang" value="en">English</button>
+                        <button type="submit" name="lang" value="nl">Dutch</button>
+                        <button type="submit" name="lang" value="de">German</button>
+                    </form>
+                </div>
+            </li>
         </ul>
     </div>
 </header>
 
-   
-<main> 
-    <div class="HomeSec">
-    <!--mission statement etc-->
-    </div>
-    
-    <div class="ServiceSec">
-    <!--Packages and information etc-->
-    </div>
-    
+<main>
+    <div class="HomeSec"></div>
+
+    <div class="ServiceSec"></div>
+
     <div class="AboutSec">
         <h2>About</h2>
         <p>We are beepboop beep boop</p>
-            <div class="employee-cards">
-                <div class="employee-card">
-                    <div class="employee-photo"></div>
-                    <div class="employee-info">
-                        <p>Employee #1</p>
-                        <p>Freelancer</p>
-                    </div>
-                </div>
-                <div class="employee-card">
-                    <div class="employee-photo"></div>
-                    <div class="employee-info">
-                        <p>employee #2</p>
-                        <p>freelancer</p>
-                    </div>
-                </div>
-                <div class="employee-card">
-                    <div class="employee-photo"></div>
-                    <div class="employee-info">
-                        <p>employee #3</p>
-                        <p>freelancer</p>
-                    </div>
-                </div>
-                <div class="employee-card">
-                    <div class="employee-photo"></div>
-                    <div class="employee-info">
-                        <p>employee #4</p>
-                        <p>freelancer</p>
-                    </div>
-                </div>
-                <div class="employee-card">
-                    <div class="employee-photo"></div>
-                    <div class="employee-info">
-                        <p>employee #5</p>
-                        <p>freelancer</p>
-                    </div>
-                </div>
-                <div class="employee-card">
-                    <div class="employee-photo"></div>
-                    <div class="employee-info">
-                        <p>employee #6</p>
-                        <p>freelancer</p>
-                    </div>
+        <div class="employee-cards">
+            <div class="employee-card">
+                <div class="employee-photo"></div>
+                <div class="employee-info">
+                    <p>Employee #1</p>
+                    <p>Freelancer</p>
                 </div>
             </div>
+            <div class="employee-card">
+                <div class="employee-photo"></div>
+                <div class="employee-info">
+                    <p>employee #2</p>
+                    <p>freelancer</p>
+                </div>
+            </div>
+            <div class="employee-card">
+                <div class="employee-photo"></div>
+                <div class="employee-info">
+                    <p>employee #3</p>
+                    <p>freelancer</p>
+                </div>
+            </div>
+            <div class="employee-card">
+                <div class="employee-photo"></div>
+                <div class="employee-info">
+                    <p>employee #4</p>
+                    <p>freelancer</p>
+                </div>
+            </div>
+            <div class="employee-card">
+                <div class="employee-photo"></div>
+                <div class="employee-info">
+                    <p>employee #5</p>
+                    <p>freelancer</p>
+                </div>
+            </div>
+            <div class="employee-card">
+                <div class="employee-photo"></div>
+                <div class="employee-info">
+                    <p>employee #6</p>
+                    <p>freelancer</p>
+                </div>
+            </div>
+        </div>
     </div>
-    
-    <div class="ContactSec">
-    <!--Contact section-->
-    </div></main>
 
+    <div class="ContactSec" id="ContactSec">
+        <h2>Contact Us</h2>
+
+        <?php
+        if (isset($_POST['submit'])) {
+            $name = htmlspecialchars($_POST['name']);
+            $email = htmlspecialchars($_POST['email']);
+            $message = htmlspecialchars($_POST['message']);
+
+            if (!empty($name) && !empty($email) && !empty($message)) {
+                echo "<p class='success'>Thank you, $name! Your message has been received. We will contact you at $email soon.</p>";
+            } else {
+                echo "<p class='error'>Please fill out all fields correctly.</p>";
+            }
+        }
+        ?>
+
+        <form action="#ContactSec" method="POST">
+            <input type="text" name="name" placeholder="Enter your name" required>
+            <input type="email" name="email" placeholder="Enter a valid email address" required>
+            <textarea name="message" placeholder="Enter your message" rows="5" required></textarea>
+            <button type="submit" name="submit">Submit</button>
+        </form>
+    </div>
+</main>
 </body>
 </html>
