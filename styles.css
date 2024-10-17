@@ -127,3 +127,41 @@ header {
     font-size: 1.1rem;
     margin-bottom: 20px;
 }
+
+.dte {
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.ServiceSec {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.package {
+    background-color: lightgrey;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 30%;
+    width: auto;
+    height: 500px;
+    border-radius: 15%;
+}
+
+.packageContent {
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 10%;
+}
+
+.packageText {
+    text-align: right;
+    
+}
+
+.iconPlaceholder {
+    width: 30%;
+    height: auto;
+}
