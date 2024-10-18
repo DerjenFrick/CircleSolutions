@@ -97,10 +97,14 @@
         <h2>Contact Us</h2>
 
         <?php
-        if (isset($_POST['submit'])) {
-            $name = htmlspecialchars($_POST['name']);
-            $email = htmlspecialchars($_POST['email']);
-            $message = htmlspecialchars($_POST['message']);
+        $name ="";
+        $email = "";
+        $message= "";
+        
+        if ($_SERVER['REQUEST METHOD'] == "POST" {
+            $name = filter_input($_POST['name']);
+            $email = filter_input($_POST,'email',FILTER_VALIDATE_EMAIL);
+            $message = filter_input($POST,'name');
 
             if (!empty($name) && !empty($email) && !empty($message)) {
                 echo "<p class='success'>Thank you, $name! Your message has been received. We will contact you at $email soon.</p>";
