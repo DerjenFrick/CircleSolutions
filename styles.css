@@ -3,6 +3,10 @@
     margin: 0;
    color: #2a4756;
 }
+h1
+{
+font-size: 40pt;
+}
 body
 {
     background-color: #dcf1f9;
@@ -78,6 +82,10 @@ header {
     width: 100%;
     
 }
+.basic-info1 p
+{
+    color: #C7eaf8;
+}
 .basic-info2
 {
     display: flex;
@@ -106,7 +114,8 @@ header {
 }
 
 .AboutSec h1 {
-    font-size: 3rem;
+    font-size: 40pt;
+    color: #2a4756;
 }
 
 .AboutSec p {
@@ -194,6 +203,7 @@ header {
 .ContactSec h2 {
     font-size: 2rem;
     margin-bottom: 20px;
+    color: #2a4756;
 }
 
 .ContactSec form {
@@ -254,13 +264,23 @@ header {
     margin-left: 10%;
     margin-right: 10%;
 }
+.ServiceSec
+{
+    display: flex;
+    gap: 10px;
+   align-items: center;
+   gap: 20px;
+    flex-direction:column;
+    
+}
 
-.ServiceSec {
+.packages {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    
     color: #C7eaf8;
 }
-.ServiceSec p , h2
+.packages p , h2
 {
     color: #C7eaf8;
 }
@@ -269,7 +289,7 @@ header {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 20px;
+    padding: 25px;
     gap: 10px;
     background-color:#2a4756;
     border-radius: 15%;
@@ -306,6 +326,7 @@ header {
 .image-size-m
 {
     width: 15%;
+    
 }
 
 .bc-cyan
@@ -317,3 +338,4 @@ header {
 {
     padding: 20px;
 }
+
