@@ -8,37 +8,92 @@
 </head>
 <body>
 <header>
-    <h4>LOGO</h4>
+    <?php 
+    $lang = "eng";
+
+    if ($_SERVER['REQUEST_METHOD'] == "POST")
+    {
+        $lang = filter_input(INPUT_POST,"language");
+
+    }
+    ?>
+
+    <img src="images/circle solutions_logo_02.png" alt="Circle Solutions logo in black" id="logo1">
     <div id="navBar" class="hidden">
         <ul>
             <li><a href="#HomeSec">Home</a></li>
             <li><a href="#ServiceSec">Services</a></li>
             <li><a href="#AboutSec">About</a></li>
             <li class="dropdown">
-                <a href="btnDrop">Languages</a>
-                <div class="dropContent">
-                    <form action="language.php">
-                        <button type="submit" name="lang" value="en">English</button>
-                        <button type="submit" name="lang" value="nl">Dutch</button>
-                        <button type="submit" name="lang" value="de">German</button>
-                    </form>
-                </div>
+                <form action="POST">
+                    <label for="dropdown">Languages</label>
+                    <select name="language" id="dropdown">
+                        <option value="eng">Englsih</option>
+                        <option value="nl">Dutch</option>
+                        <option value="de">German</option>
+                    </select>
+                </form>
+                
             </li>
         </ul>
     </div>
 </header>
 
 <main>
-    <div class="HomeSec">
-        <img src="images/Down to earth.png" alt="Down to earth" class="dte">
+<div class="HomeSec">
+    <div class="opening">
+        <h1>just connect the dots</h1>
+        <p>to develop software solutions that fit like a glove.</p>
     </div>
+    <div class="basic-info1">
+<img src="images/image1.jpg" alt="Woman holding a pen" class="image1">
+<p>We envision a world where using software is as easy and natural as breathing</p>
+    </div>
+    <div class="basic-info2">
+        <div class="why-class">
+            <h3>why</h3>
+            <p>We think everyday tasks should be no hassle</p>
+        </div>
+
+        <div class="how-class">
+            <h3>how</h3>
+            <p>by developing software that makes life easier</p>
+        </div>
+
+        <div class="what-class">
+            <h3>what</h3>
+            <p>software solutions that fit the individual campaigns</p>
+        </div>
+    </div>
+    <div class="basic-info3">
+
+    </div>
+    
+        
+   
+</div>
 
     <div class="ServiceSec">
-        <div class="package">
-            <div class="packageText packageContent">Package #1</div>
+        <div class="package1">
+            
             <img src="images/documentMan.jpg" class="iconPlaceholder packageContent">
+            <h2>circle workspace</h2>
+              <p>
+                App Management:
+                Quickly create a role-based workplace that integrates all current and future technologies.
+                </p>
+
+                <p>
+                    Communication & Information:
+                    View unread emails, appointments, news, and more at a glance in Circle Workspace.
+                </p>
+                <p>
+                    Document Management:
+                    Centralize documents from Office 365, OneDrive, SharePoint, and more for easy online or offline access.
+                              
+                </p>
         </div>
-        <div class="package">
+        <div class="package2">
             <div class="packageText packageContent">Package #2</div>
             <img src="images/knowledge.jpg" class="iconPlaceholder packageContent">
         </div>
