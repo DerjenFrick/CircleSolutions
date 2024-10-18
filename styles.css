@@ -1,4 +1,4 @@
-h1, h2, h3, h4, h5, h6, p, span, a, li, button {
+* {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -8,7 +8,7 @@ header {
     display: flex;
     padding: 20px;
     margin: 0;
-    background-color: #2B5261;
+    background-color: white;
 }
 
 #navBar {
@@ -23,11 +23,19 @@ header {
     justify-content: flex-end;
     gap: 20px;
     padding: 0;
+   
 }
 
 #navBar ul li {
     display: inline-block;
+    color: black;
+    
 }
+#navBar ul li a:visited
+{
+    color:  black;
+}
+
 
 .AboutSec {
     text-align: center;
@@ -51,66 +59,52 @@ header {
     justify-content: center;
     padding: 0 20px;
 }
+.employee-card1 , .employee-card2 , .employee-card3 ,.employee-card4,.employee-card5,.employee-card6
+{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
 
 .employee-card1 {
     background-color: #2a4756;
     grid-column:  2/3;
     grid-row: 1/2;
-    border-radius: 10px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
+    
 .employee-card2 {
     background-color: #2a4756;
     grid-column:  3/4;
     grid-row: 1/2;
-    border-radius: 10px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    
+   
 }
 .employee-card3 {
     background-color: #2a4756;
     grid-column:  4/5;
     grid-row: 1/2;
-    border-radius: 10px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    
 }
 .employee-card4 {
     background-color: #2a4756;
     grid-column:  2/3;
     grid-row: 2/3;
-    border-radius: 10px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    
 }
 .employee-card5 {
     background-color: #2a4756;
     grid-column:  3/4;
     grid-row: 2/3;
-    border-radius: 10px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+   
+    
 }
 .employee-card6 {
     background-color: #2a4756;
     grid-column:  4/5;
     grid-row: 2/3;
-    border-radius: 10px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    
 }
 
 .employee-photo {
@@ -218,3 +212,4 @@ header {
     width: 30%;
     height: auto;
 }
+* 
