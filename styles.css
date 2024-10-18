@@ -138,6 +138,14 @@ header {
     gap: 15px;
 }
 
+
+   
+    
+
+
+
+
+
 .ContactSec input[type="text"],
 .ContactSec input[type="email"],
 .ContactSec textarea {
@@ -213,3 +221,23 @@ header {
     height: auto;
 }
 * 
+.image-size-s
+{
+    width: 50px;
+    height:50px;
+}
+
+.image-size-m
+{
+    width: 15%;
+}
+
+.bc-cyan
+{
+    background-color: rgba(220, 241, 249, 0.85);
+}
+
+.socials
+{
+    padding: 20px;
+}
