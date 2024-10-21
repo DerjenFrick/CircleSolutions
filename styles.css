@@ -9,18 +9,23 @@ font-size: 40pt;
 }
 body
 {
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+margin: 0 auto;
  background-color: #dcf1f9;
 }
 
 header {
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    display: flex;
+    
     padding: 20px;
-    margin: 0;
+    margin: 0 auto;
     background-color: white;
-    position: fixed;
+   
     width: 100%;
 }
 
@@ -28,6 +33,7 @@ header {
     display: flex;
     justify-content: flex-end;
     width: 100%;
+    margin: 0;
     
 }
 
@@ -43,6 +49,7 @@ header {
 #navBar ul li.dropdown form label
 {
     color: black;
+    padding: 20px;
 }
 #navBar ul li.dropdown form select
 {
@@ -93,6 +100,7 @@ header {
 {
     background-color: #2a4756;
     grid-row: 2/3;
+   
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -108,6 +116,7 @@ header {
 {
     display: flex;
     flex-direction: row;
+    grid-row: 3/4;
     justify-content: center;
     align-items: center;
     height: 60vh;
@@ -122,6 +131,33 @@ header {
 .opening h1
 {
     font-size: 60px;
+}
+.basic-info3
+{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+grid-row: 4/5;
+margin: 0 auto;
+flex-direction: row;
+
+width: 100%;
+}
+.subtext3
+{
+    display: flex;
+    flex-direction: column;
+   gap: 10px;
+    
+}
+.subtext3 h2
+{
+    color: #2a4756;
+}
+.image4
+{
+    width: 20%;
+    height: 20%;
 }
 
 
@@ -356,4 +392,9 @@ header {
 {
     padding: 20px;
 }
+@media only screen and (max-width: 768px)
+{
+    body{
 
+    }
+}

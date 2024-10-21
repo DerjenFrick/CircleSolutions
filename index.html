@@ -47,7 +47,7 @@
         <p>to develop software solutions that fit like a glove.</p>
     </div>
     <div class="basic-info1">
-<img src="images/image1.jpg" alt="Woman holding a pen" class="image1">
+<img src="images/reminder.png" alt="Woman holding a pen" class="image1">
 <p>We envision a world where using software is as easy and natural as breathing</p>
     </div>
     <div class="basic-info2">
@@ -65,9 +65,21 @@
             <h3>what</h3>
             <p>software solutions that fit the individual campaigns</p>
         </div>
+       
+     
     </div>
     <div class="basic-info3">
-
+        <div class="subtext3">
+            <h2>down to earth</h2>
+            <p>We love to keep things simple. <br> No big gestures, no theatre or promising utopias.</p>
+            <h2>user friendly</h2>
+            <p>With our solution we build bridges between user and systems.</p>
+            <h2>quality driven</h2>
+            <p>Our professionalism doesn’t follow hypes: it follows quality. <br>We believe in ever growing and striving for the best.</p>
+        </div>
+        
+            <img src="images/product-manager.png" alt="" class="image4">
+        
     </div>
     
         
@@ -174,10 +186,10 @@
         $email = "";
         $message= "";
         
-        if ($_SERVER['REQUEST METHOD'] == "POST" {
-            $name = filter_input($_POST['name']);
-            $email = filter_input($_POST,'email',FILTER_VALIDATE_EMAIL);
-            $message = filter_input($POST,'name');
+        if ($_SERVER['REQUEST_METHOD'] == "POST") {
+            $name = filter_input(INPUT_POST,'name');
+            $email = filter_input(INPUT_POST,'email',FILTER_VALIDATE_EMAIL);
+            $message = filter_input(INPUT_POST,'name');
 
             if (!empty($name) && !empty($email) && !empty($message)) {
                 echo "<p class='success'>Thank you, $name! Your message has been received. We will contact you at $email soon.</p>";
