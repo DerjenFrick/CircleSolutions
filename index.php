@@ -28,15 +28,14 @@
                 <li><a href="#AboutSec">About</a></li>
                 <li><a href="#ContactSec">Contact</a></li>
                 <li class="dropdown">
-                    <form action="POST">
+                    <form method="POST" action="language_redirect.php">
                         <label for="dropdown">Languages</label>
-                        <select name="language" id="dropdown">
-                            <option value="eng">Englsih</option>
-                            <option value="nl">Nederlands</option>
-                            <option value="de">Deutsch</option>
+                        <select name="language" id="dropdown" onchange="this.form.submit()">
+                            <option value="english.html">English</option>
+                            <option value="nederlands.html">Nederlands</option>
+                            <option value="deutsch.html">Deutsch</option>
                         </select>
                     </form>
-
                 </li>
             </ul>
         </div>
@@ -217,6 +216,12 @@
             <h2>Contact Us</h2>
 
             <?php
+        if (isset($_POST['language'])) {
+            $selectedLanguage = $_POST['language'];
+            // Redirect to the selected language page
+            header("Location: $selectedLanguage");
+            exit();
+        }
         $name ="";
         $email = "";
         $message= "";
