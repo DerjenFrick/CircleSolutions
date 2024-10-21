@@ -259,6 +259,8 @@
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
 
             </div>
+            <div class="AboutSec"><small class="subtext3">&copy; 2024 Circle Solutions. All Rights Reserved.</small>
+            </div>
     </main>
 </body>
 
