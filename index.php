@@ -31,7 +31,7 @@
                 <form method="POST" action="">
                     <label for="dropdown">Languages</label>
                     <select name="language" id="dropdown" onchange="this.form.submit()">
-                        <option value="index.php" <?php if ($lang == "eng") echo "selected"; ?>>English</option>
+                    <option value="index.php" <?php if ($lang == "eng") echo "selected"; ?>>English</option>
                         <option value="nederlands.php" <?php if ($lang == "nl") echo "selected"; ?>>Nederlands</option>
                         <option value="deutsch.php" <?php if ($lang == "de") echo "selected"; ?>>Deutsch</option>
                     </select>
@@ -257,8 +257,6 @@
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-            </div>
-            <div class="AboutSec"><small class="subtext3">&copy; 2024 Circle Solutions. All Rights Reserved.</small>
             </div>
     </main>
 </body>
