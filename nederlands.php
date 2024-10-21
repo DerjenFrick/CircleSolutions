@@ -11,7 +11,7 @@
 <body>
     <header>
         <?php 
-    $lang = "eng";
+    $lang = "nl";
 
     if ($_SERVER['REQUEST_METHOD'] == "POST")
     {
