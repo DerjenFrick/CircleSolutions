@@ -31,9 +31,9 @@
                     <form method="POST" action="language_redirect.php">
                         <label for="dropdown">Languages</label>
                         <select name="language" id="dropdown" onchange="this.form.submit()">
-                            <option value="english.html">English</option>
-                            <option value="nederlands.html">Nederlands</option>
-                            <option value="deutsch.html">Deutsch</option>
+                            <option value="index.php">English</option>
+                            <option value="nederlands.php">Nederlands</option>
+                            <option value="deutsch.php">Deutsch</option>
                         </select>
                     </form>
                 </li>
@@ -218,7 +218,6 @@
             <?php
         if (isset($_POST['language'])) {
             $selectedLanguage = $_POST['language'];
-            // Redirect to the selected language page
             header("Location: $selectedLanguage");
             exit();
         }
