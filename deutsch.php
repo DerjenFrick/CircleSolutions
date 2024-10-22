@@ -10,15 +10,14 @@
 
 <body>
     <header>
-        <?php 
-    $lang = "de";
+        <?php
+        $lang = "de";
 
-    if ($_SERVER['REQUEST_METHOD'] == "POST")
-    {
-        $lang = filter_input(INPUT_POST,"language");
+        if ($_SERVER['REQUEST_METHOD'] == "POST") {
+            $lang = filter_input(INPUT_POST, "language");
 
-    }
-    ?>
+        }
+        ?>
 
         <img src="images/circle solutions_logo_02.png" alt="Circle Solutions Logo in Schwarz" id="logo1">
         <div id="navBar" class="hidden">
@@ -28,14 +27,18 @@
                 <li><a href="#AboutSec">Über uns</a></li>
                 <li><a href="#ContactSec">Kontakt</a></li>
                 <li class="dropdown">
-                <form method="POST" action="">
-                    <label for="dropdown">Sprachen</label>
-                    <select name="language" id="dropdown" onchange="this.form.submit()">
-                    <option value="index.php" <?php if ($lang == "eng") echo "selected"; ?>>Englisch</option>
-                        <option value="nederlands.php" <?php if ($lang == "nl") echo "selected"; ?>>Niederländisch</option>
-                        <option value="deutsch.php" <?php if ($lang == "de") echo "selected"; ?>>Deutsch</option>
-                    </select>
-                </form>
+                    <form method="POST" action="">
+                        <label for="dropdown">Sprachen</label>
+                        <select name="language" id="dropdown" onchange="this.form.submit()">
+                            <option value="index.php" <?php if ($lang == "eng")
+                                echo "selected"; ?>>Englisch</option>
+                            <option value="nederlands.php" <?php if ($lang == "nl")
+                                echo "selected"; ?>>Niederländisch
+                            </option>
+                            <option value="deutsch.php" <?php if ($lang == "de")
+                                echo "selected"; ?>>Deutsch</option>
+                        </select>
+                    </form>
                 </li>
             </ul>
         </div>
@@ -58,8 +61,10 @@
                             </div>
                             <div class="col">
                                 <div class="vision-mission">
-                                    <p>Wir stellen uns eine Welt vor, in der die Nutzung von Software so einfach und natürlich ist wie das Atmen.</p>
-                                    <p>Unser Ziel ist es, Software zu entwickeln, die den individuellen Qualitäten und Bedürfnissen entspricht.</p>
+                                    <p>Wir stellen uns eine Welt vor, in der die Nutzung von Software so einfach und
+                                        natürlich ist wie das Atmen.</p>
+                                    <p>Unser Ziel ist es, Software zu entwickeln, die den individuellen Qualitäten und
+                                        Bedürfnissen entspricht.</p>
                                     <p>Menschen und Unternehmen mit Softwarelösungen zu stärken.</p>
                                 </div>
                             </div>
@@ -97,11 +102,13 @@
             <div class="basic-info3">
                 <div class="subtext3">
                     <h2>Bodenständig</h2>
-                    <p>Wir lieben es, die Dinge einfach zu halten. <br> Keine großen Gesten, kein Theater oder das Versprechen von Utopien.</p>
+                    <p>Wir lieben es, die Dinge einfach zu halten. <br> Keine großen Gesten, kein Theater oder das
+                        Versprechen von Utopien.</p>
                     <h2>Benutzerfreundlich</h2>
                     <p>Mit unserer Lösung schlagen wir Brücken zwischen Benutzer und Systemen.</p>
                     <h2>Qualitätsgetrieben</h2>
-                    <p>Unser Professionalismus folgt keinen Trends: er folgt der Qualität. <br>Wir glauben an kontinuierliches Wachstum und das Streben nach dem Besten.</p>
+                    <p>Unser Professionalismus folgt keinen Trends: er folgt der Qualität. <br>Wir glauben an
+                        kontinuierliches Wachstum und das Streben nach dem Besten.</p>
                 </div>
 
                 <img src="images/reminder.png" alt="Frau macht Notizen" class="image4">
@@ -121,7 +128,8 @@
                     <h2>Circle Workspace</h2>
                     <p>
                         App-Verwaltung:
-                        Erstellen Sie schnell einen rollenbasierten Arbeitsplatz, der alle aktuellen und zukünftigen Technologien integriert.
+                        Erstellen Sie schnell einen rollenbasierten Arbeitsplatz, der alle aktuellen und zukünftigen
+                        Technologien integriert.
                     </p>
                     <p>
                         Kommunikation & Informationen:
@@ -129,7 +137,8 @@
                     </p>
                     <p>
                         Dokumentenmanagement:
-                        Zentralisieren Sie Dokumente von Office 365, OneDrive, SharePoint und mehr für einen einfachen Online- oder Offline-Zugriff.
+                        Zentralisieren Sie Dokumente von Office 365, OneDrive, SharePoint und mehr für einen einfachen
+                        Online- oder Offline-Zugriff.
 
                     </p>
                 </div>
@@ -139,16 +148,19 @@
                     <h2>Circle D.O.T.S.</h2>
                     <p>
                         Interne Kommunikation:
-                        Halten Sie alle informiert, indem Sie Nachrichten effizient verteilen und sicherstellen, dass die Organisation auf dem Laufenden bleibt.
+                        Halten Sie alle informiert, indem Sie Nachrichten effizient verteilen und sicherstellen, dass
+                        die Organisation auf dem Laufenden bleibt.
                     </p>
                     <p>
                         Verbinden und Einbinden:
-                        Ermöglichen Sie Teams, sich zu vernetzen und zusammenzuarbeiten, indem Sie Kanäle und Seiten für Projekte oder Interessen erstellen, um Vertrauen und Teamarbeit zu fördern.
+                        Ermöglichen Sie Teams, sich zu vernetzen und zusammenzuarbeiten, indem Sie Kanäle und Seiten für
+                        Projekte oder Interessen erstellen, um Vertrauen und Teamarbeit zu fördern.
                     </p>
                     <p>
 
                         Wissensmanagement:
-                        Zentralisieren Sie Ressourcen und Informationen für einfachen Zugriff, reduzieren Sie die Suchzeit und steigern Sie die Produktivität.
+                        Zentralisieren Sie Ressourcen und Informationen für einfachen Zugriff, reduzieren Sie die
+                        Suchzeit und steigern Sie die Produktivität.
                     </p>
 
                 </div>
@@ -208,27 +220,27 @@
             <h2>Kontaktieren Sie uns</h2>
 
             <?php
-        if (isset($_POST['language'])) {
-            $selectedLanguage = $_POST['language'];
-            header("Location: $selectedLanguage");
-            exit();
-        }
-        $name ="";
-        $email = "";
-        $message= "";
-        
-        if ($_SERVER['REQUEST_METHOD'] == "POST") {
-            $name = filter_input(INPUT_POST,'name');
-            $email = filter_input(INPUT_POST,'email',FILTER_VALIDATE_EMAIL);
-            $message = filter_input(INPUT_POST,'name');
-
-            if (!empty($name) && !empty($email) && !empty($message)) {
-                echo "<p class='success'>Danke, $name! Ihre Nachricht wurde empfangen. Wir werden uns bald unter $email bei Ihnen melden.</p>";
-            } else {
-                echo "<p class='error'>Bitte füllen Sie alle Felder korrekt aus.</p>";
+            if (isset($_POST['language'])) {
+                $selectedLanguage = $_POST['language'];
+                header("Location: $selectedLanguage");
+                exit();
             }
-        }
-        ?>
+            $name = "";
+            $email = "";
+            $message = "";
+
+            if ($_SERVER['REQUEST_METHOD'] == "POST") {
+                $name = filter_input(INPUT_POST, 'name');
+                $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
+                $message = filter_input(INPUT_POST, 'name');
+
+                if (!empty($name) && !empty($email) && !empty($message)) {
+                    echo "<p class='success'>Danke, $name! Ihre Nachricht wurde empfangen. Wir werden uns bald unter $email bei Ihnen melden.</p>";
+                } else {
+                    echo "<p class='error'>Bitte füllen Sie alle Felder korrekt aus.</p>";
+                }
+            }
+            ?>
 
             <form action="#ContactSec" method="POST">
                 <input type="text" name="name" placeholder="Geben Sie Ihren Namen ein" required>

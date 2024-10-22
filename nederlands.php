@@ -10,15 +10,14 @@
 
 <body>
     <header>
-        <?php 
-    $lang = "nl";
+        <?php
+        $lang = "nl";
 
-    if ($_SERVER['REQUEST_METHOD'] == "POST")
-    {
-        $lang = filter_input(INPUT_POST,"language");
+        if ($_SERVER['REQUEST_METHOD'] == "POST") {
+            $lang = filter_input(INPUT_POST, "language");
 
-    }
-    ?>
+        }
+        ?>
 
         <img src="images/circle solutions_logo_02.png" alt="Circle Solutions logo in zwart" id="logo1">
         <div id="navBar" class="hidden">
@@ -28,14 +27,18 @@
                 <li><a href="#AboutSec">Over Ons</a></li>
                 <li><a href="#ContactSec">Contact</a></li>
                 <li class="dropdown">
-                <form method="POST" action="">
-                    <label for="dropdown">Talen</label>
-                    <select name="language" id="dropdown" onchange="this.form.submit()">
-                    <option value="index.php" <?php if ($lang == "eng") echo "selected"; ?>>Engels</option>
-                        <option value="nederlands.php" <?php if ($lang == "nl") echo "selected"; ?>>Nederlands</option>
-                        <option value="deutsch.php" <?php if ($lang == "de") echo "selected"; ?>>Duits</option>
-                    </select>
-                </form>
+                    <form method="POST" action="">
+                        <label for="dropdown">Talen</label>
+                        <select name="language" id="dropdown" onchange="this.form.submit()">
+                            <option value="index.php" <?php if ($lang == "eng")
+                                echo "selected"; ?>>Engels</option>
+                            <option value="nederlands.php" <?php if ($lang == "nl")
+                                echo "selected"; ?>>Nederlands
+                            </option>
+                            <option value="deutsch.php" <?php if ($lang == "de")
+                                echo "selected"; ?>>Duits</option>
+                        </select>
+                    </form>
                 </li>
             </ul>
         </div>
@@ -60,7 +63,8 @@
                                 <div class="vision-mission">
                                     <p>Wij voorzien een wereld waarin het gebruik van software net zo eenvoudig en
                                         natuurlijk is als ademen.</p>
-                                    <p>Ons doel is om software te ontwikkelen die past bij de individuele kwaliteiten van
+                                    <p>Ons doel is om software te ontwikkelen die past bij de individuele kwaliteiten
+                                        van
                                         individuele behoeften.</p>
                                     <p>Om mensen en bedrijven te versterken met softwareoplossingen.</p>
                                 </div>
@@ -214,27 +218,27 @@
             <h2>Contacteer Ons</h2>
 
             <?php
-        if (isset($_POST['language'])) {
-            $selectedLanguage = $_POST['language'];
-            header("Location: $selectedLanguage");
-            exit();
-        }
-        $name ="";
-        $email = "";
-        $message= "";
-        
-        if ($_SERVER['REQUEST_METHOD'] == "POST") {
-            $name = filter_input(INPUT_POST,'name');
-            $email = filter_input(INPUT_POST,'email',FILTER_VALIDATE_EMAIL);
-            $message = filter_input(INPUT_POST,'name');
-
-            if (!empty($name) && !empty($email) && !empty($message)) {
-                echo "<p class='success'>Dank je wel, $name! Je bericht is ontvangen. We nemen binnenkort contact met je op via $email.</p>";
-            } else {
-                echo "<p class='error'>Vul alle velden correct in, alstublieft.</p>";
+            if (isset($_POST['language'])) {
+                $selectedLanguage = $_POST['language'];
+                header("Location: $selectedLanguage");
+                exit();
             }
-        }
-        ?>
+            $name = "";
+            $email = "";
+            $message = "";
+
+            if ($_SERVER['REQUEST_METHOD'] == "POST") {
+                $name = filter_input(INPUT_POST, 'name');
+                $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
+                $message = filter_input(INPUT_POST, 'name');
+
+                if (!empty($name) && !empty($email) && !empty($message)) {
+                    echo "<p class='success'>Dank je wel, $name! Je bericht is ontvangen. We nemen binnenkort contact met je op via $email.</p>";
+                } else {
+                    echo "<p class='error'>Vul alle velden correct in, alstublieft.</p>";
+                }
+            }
+            ?>
 
             <form action="#ContactSec" method="POST">
                 <input type="text" name="name" placeholder="Vul je naam in" required>
