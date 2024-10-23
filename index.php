@@ -1,10 +1,22 @@
+<?php
+if($_GET['style'] == 'stylesDark.css'){
+    $style = 'stylesDark.css';
+    $style2 = 'styles.css';
+}
+ 
+ else{
+    $style = 'styles.css';
+    $style2 = 'stylesDark.css';
+ }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="<?php echo $style ?>">
     <title>Circle Solutions | Home</title>
 </head>
 
@@ -26,9 +38,9 @@
             &#9776;
         </label>
         <div id="navBar" class="hidden">
-            <input type="checkbox" id="darkmode-toggle"/>
-            <label for="darkmode-toggle"></label>
+            
             <ul>
+            <li><a href="?style=<?php echo $style2 ?>">Light/Dark mode</a></li>
                 <li><a href="#HomeSec">Home</a></li>
                 <li><a href="#ServiceSec">Services</a></li>
                 <li><a href="#AboutSec">About</a></li>
@@ -43,13 +55,13 @@
                 <div class="opening container no-pad-x">
                 <div class="container">
                             <div class="button-container">
-                                <a href="index.php">
+                                <a href="index.php?style=styles.css">
                                     <button class="dot-button" id="btn1">English</button>
                                 </a>
-                                <a href="nederlands.php">
+                                <a href="nederlands.php?style=styles.css">
                                     <button class="dot-button" id="btn2">Dutch</button>
                                 </a>
-                                <a href="deutsch.php">
+                                <a href="deutsch.php?style=styles.css">
                                     <button class="dot-button" id="btn3">German</button>
                                 </a>
                             </div>
