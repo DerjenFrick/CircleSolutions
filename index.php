@@ -24,6 +24,8 @@
         <label for="menuToggle" class="menu-icon">
         </label>
         <div id="navBar" class="hidden">
+            <input type="checkbox" id="darkmode-toggle"/>
+            <label for="darkmode-toggle"></label>
             <ul>
                 <li><a href="#HomeSec">Home</a></li>
                 <li><a href="#ServiceSec">Services</a></li>
