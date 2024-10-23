@@ -22,6 +22,8 @@
         <img src="images/circle solutions_logo_02.png" alt="Circle Solutions logo in black" id="logo1">
         <input type="checkbox" id="menuToggle" class="menu-toggle">
         <label for="menuToggle" class="menu-icon">
+            <!-- Hamburger icon -->
+            &#9776;
         </label>
         <div id="navBar" class="hidden">
             <input type="checkbox" id="darkmode-toggle"/>
@@ -31,6 +33,16 @@
                 <li><a href="#ServiceSec">Services</a></li>
                 <li><a href="#AboutSec">About</a></li>
                 <li><a href="#ContactSec">Contact</a></li>
+                <li class="dropdown">
+                    <form method="POST" action="">
+                        <select name="language" id="dropdown" onchange="this.form.submit()">
+                            <option value="index.php" <?php if ($lang=="eng" ) echo "selected" ; ?>>English</option>
+                            <option value="nederlands.php" <?php if ($lang=="nl" ) echo "selected" ; ?>>Nederlands
+                            </option>
+                            <option value="deutsch.php" <?php if ($lang=="de" ) echo "selected" ; ?>>Deutsch</option>
+                        </select>
+                    </form>
+                </li>
             </ul>
         </div>
     </header>
@@ -39,21 +51,6 @@
         <div class="HomeSec" id="HomeSec">
             <section>
                 <div class="opening container no-pad-x">
-                    <div class="languages">
-                        <div class="container">
-                            <div class="button-container">
-                                <a href="index.php">
-                                    <button class="dot-button" id="btn1">English</button>
-                                </a>
-                                <a href="nederlands.php">
-                                    <button class="dot-button" id="btn2">Dutch</button>
-                                </a>
-                                <a href="deutsch.php">
-                                    <button class="dot-button" id="btn3">German</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
                     <h1>just connect the dots</h1>
                     <p>to develop software solutions that fit like a glove.</p>
                 </div>
@@ -141,7 +138,7 @@
                         <div class="packages  ">
                             <div class="package1">
                                 <div class="package-title">
-                                    <img src="images/documentMan.jpg" class="iconPlaceholder packageContent">
+                                    <img src="images/documentMan.jpg" alt="people in a workspace" class="iconPlaceholder packageContent">
                                     <h2>circle workspace</h2>
                                 </div>
                                 <p>
@@ -161,10 +158,16 @@
                                     access.
 
                                 </p>
+                                <p>
+                                    Pricing: 1-50 users €140,00 per month, 51-500 users €760,00 per month
+                                </p>
+                                <p>
+                                    Call: +31 6 567788234 or e-mail :  info@circlesolutions.com
+                                </p>
                             </div>
                             <div class="package2">
                                 <div class="package-title">
-                                    <img src="images/knowledge.jpg" class="iconPlaceholder packageContent">
+                                    <img src="images/knowledge.jpg" alt="picture for circle D.O.t.S." class="iconPlaceholder packageContent">
                                     <h2>circle D.O.T.S.</h2>
                                 </div>
                                 <p>
@@ -187,7 +190,12 @@
                                     and
                                     increasing productivity.
                                 </p>
-
+                                <p>
+                                    Pricing: 1-50 users €140,00 per month, 51-500 users €760,00 per month
+                                </p>
+                                <p>
+                                    Call: +31 6 567788234 or e-mail :  info@circlesolutions.com
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -197,7 +205,6 @@
         <section>
             <div class="AboutSec" id="AboutSec">
                 <h1>About</h1>
-                <p>We are beepboop beep boop</p>
                 <div class="employee-cards">
                     <div class="employee-card1">
                         <img src="images/Raymond.jpg" alt="raymond the Ceo" class="employee-photo">
