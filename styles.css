@@ -597,26 +597,3 @@ h2 {
         text-decoration: none;
     }
 }
-.button-container
- {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 10%;
-    gap: 10%;
-}
-
-.dot-button 
-{
-    background-color: #799dab;
-    color: white;
-    padding: 15px 30px;
-    font-size: 16px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-.dot-button:hover 
-{
-    background-color: #2a4756;
-}

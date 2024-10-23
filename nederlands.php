@@ -26,7 +26,20 @@
                 <li><a href="#ServiceSec">Diensten</a></li>
                 <li><a href="#AboutSec">Over Ons</a></li>
                 <li><a href="#ContactSec">Contact</a></li>
-                
+                <li class="dropdown">
+                    <form method="POST" action="">
+                        <label for="dropdown">Talen</label>
+                        <select name="language" id="dropdown" onchange="this.form.submit()">
+                            <option value="index.php" <?php if ($lang == "eng")
+                                echo "selected"; ?>>Engels</option>
+                            <option value="nederlands.php" <?php if ($lang == "nl")
+                                echo "selected"; ?>>Nederlands
+                            </option>
+                            <option value="deutsch.php" <?php if ($lang == "de")
+                                echo "selected"; ?>>Duits</option>
+                        </select>
+                    </form>
+                </li>
             </ul>
         </div>
     </header>
@@ -35,19 +48,6 @@
         <div class="HomeSec" id="HomeSec">
             <section>
                 <div class="opening">
-                <div class="container">
-                            <div class="button-container">
-                                <a href="index.php">
-                                    <button class="dot-button" id="btn1">English</button>
-                                </a>
-                                <a href="nederlands.php">
-                                    <button class="dot-button" id="btn2">Dutch</button>
-                                </a>
-                                <a href="deutsch.php">
-                                    <button class="dot-button" id="btn3">German</button>
-                                </a>
-                            </div>
-                        </div>
                     <h1>verbind gewoon de stippen</h1>
                     <p>om softwareoplossingen te ontwikkelen die perfect passen.</p>
                 </div>
