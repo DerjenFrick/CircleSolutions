@@ -195,45 +195,45 @@
                 <p>We are beepboop beep boop</p>
                 <div class="employee-cards">
                     <div class="employee-card1">
-                        <div class="employee-photo"></div>
+                        <img src="images/Raymond.jpg" alt="raymond the Ceo" class="employee-photo">
                         <div class="employee-info">
-                            <p>Employee #1</p>
-                            <p>Freelancer</p>
+                            <p>Raymond</p>
+                            <p>ceo</p>
                         </div>
                     </div>
                     <div class="employee-card2">
-                        <div class="employee-photo"></div>
+                        <img src="images/Kevin.png" alt="Kevin the lead developer" class="employee-photo">
                         <div class="employee-info">
-                            <p>Employee #2</p>
-                            <p>Freelancer</p>
+                            <p>Kevin</p>
+                            <p>lead developer</p>
                         </div>
                     </div>
                     <div class="employee-card3">
-                        <div class="employee-photo"></div>
+                        <img src="images/Theresa.png" alt="" class="employee-photo">
                         <div class="employee-info">
-                            <p>Employee #3</p>
-                            <p>Freelancer</p>
+                            <p>Theresa</p>
+                            <p>project manager</p>
                         </div>
                     </div>
                     <div class="employee-card4">
-                        <div class="employee-photo"></div>
+                       <img src="images/Sander.png" alt="" class="employee-photo">
                         <div class="employee-info">
-                            <p>Employee #4</p>
-                            <p>Freelancer</p>
+                            <p>Sander</p>
+                            <p>developer</p>
                         </div>
                     </div>
                     <div class="employee-card5">
-                        <div class="employee-photo"></div>
+                       <img src="images/Rene.png" alt="" class="employee-photo">
                         <div class="employee-info">
-                            <p>Employee #5</p>
-                            <p>Freelancer</p>
+                            <p>René </p>
+                            <p>cloud solution specialist</p>
                         </div>
                     </div>
                     <div class="employee-card6">
-                        <div class="employee-photo"></div>
+                        <img src="images/John.png" alt="" class="employee-photo">
                         <div class="employee-info">
-                            <p>Employee #6</p>
-                            <p>Freelancer</p>
+                            <p>John</p>
+                            <p>developer and security officer</p>
                         </div>
                     </div>
                 </div>
