@@ -136,7 +136,7 @@
                         <div class="packages  ">
                             <div class="package1">
                                 <div class="package-title">
-                                    <img src="images/documentMan.jpg" class="iconPlaceholder packageContent">
+                                    <img src="images/documentMan.jpg" alt="people in a workspace" class="iconPlaceholder packageContent">
                                     <h2>circle workspace</h2>
                                 </div>
                                 <p>
@@ -156,10 +156,16 @@
                                     access.
 
                                 </p>
+                                <p>
+                                    Pricing: 1-50 users €140,00 per month, 51-500 users €760,00 per month
+                                </p>
+                                <p>
+                                    Call: +31 6 567788234 or e-mail :  info@circlesolutions.com
+                                </p>
                             </div>
                             <div class="package2">
                                 <div class="package-title">
-                                    <img src="images/knowledge.jpg" class="iconPlaceholder packageContent">
+                                    <img src="images/knowledge.jpg" alt="picture for circle D.O.t.S." class="iconPlaceholder packageContent">
                                     <h2>circle D.O.T.S.</h2>
                                 </div>
                                 <p>
@@ -182,7 +188,12 @@
                                     and
                                     increasing productivity.
                                 </p>
-
+                                <p>
+                                    Pricing: 1-50 users €140,00 per month, 51-500 users €760,00 per month
+                                </p>
+                                <p>
+                                    Call: +31 6 567788234 or e-mail :  info@circlesolutions.com
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -192,7 +203,6 @@
         <section>
             <div class="AboutSec" id="AboutSec">
                 <h1>About</h1>
-                <p>We are beepboop beep boop</p>
                 <div class="employee-cards">
                     <div class="employee-card1">
                         <img src="images/Raymond.jpg" alt="raymond the Ceo" class="employee-photo">
