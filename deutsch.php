@@ -21,25 +21,14 @@
 
         <img src="images/circle solutions_logo_02.png" alt="Circle Solutions Logo in Schwarz" id="logo1">
         <div id="navBar" class="hidden">
+        <input type="checkbox" id="darkmode-toggle"/>
+        <label for="darkmode-toggle"></label>
             <ul>
+            
                 <li><a href="#HomeSec">Startseite</a></li>
                 <li><a href="#ServiceSec">Dienstleistungen</a></li>
                 <li><a href="#AboutSec">Über uns</a></li>
                 <li><a href="#ContactSec">Kontakt</a></li>
-                <li class="dropdown">
-                    <form method="POST" action="">
-                        <label for="dropdown">Sprachen</label>
-                        <select name="language" id="dropdown" onchange="this.form.submit()">
-                            <option value="index.php" <?php if ($lang == "eng")
-                                echo "selected"; ?>>Englisch</option>
-                            <option value="nederlands.php" <?php if ($lang == "nl")
-                                echo "selected"; ?>>Niederländisch
-                            </option>
-                            <option value="deutsch.php" <?php if ($lang == "de")
-                                echo "selected"; ?>>Deutsch</option>
-                        </select>
-                    </form>
-                </li>
             </ul>
         </div>
     </header>
@@ -48,6 +37,19 @@
         <div class="HomeSec" id="HomeSec">
             <section>
                 <div class="opening">
+                <div class="container">
+                            <div class="button-container">
+                                <a href="index.php">
+                                    <button class="dot-button" id="btn1">English</button>
+                                </a>
+                                <a href="nederlands.php">
+                                    <button class="dot-button" id="btn2">Dutch</button>
+                                </a>
+                                <a href="deutsch.php">
+                                    <button class="dot-button" id="btn3">German</button>
+                                </a>
+                            </div>
+                        </div>
                     <h1>Verbinden Sie einfach die Punkte</h1>
                     <p>um Softwarelösungen zu entwickeln, die wie angegossen passen.</p>
                 </div>
