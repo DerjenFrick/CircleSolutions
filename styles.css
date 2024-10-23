@@ -290,6 +290,10 @@ section.basic-info3-section .col:nth-of-type(1) {
     justify-content: center;
     padding: 0 20px;
 }
+.employee-cards p
+{
+    margin: 0;
+}
 
 .employee-card1,
 .employee-card2,
@@ -297,7 +301,7 @@ section.basic-info3-section .col:nth-of-type(1) {
 .employee-card4,
 .employee-card5,
 .employee-card6 {
-    padding: 20px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -351,11 +355,12 @@ section.basic-info3-section .col:nth-of-type(1) {
 
 .employee-photo {
     width: 100%;
-    padding-bottom: 150px;
+    height: 90%;
     background-color: #cccccc;
     border-radius: 8px;
     margin-bottom: 20px;
 }
+
 
 .employee-info p {
     font-size: 1.1rem;
@@ -378,7 +383,9 @@ section.basic-info3-section .col:nth-of-type(1) {
     flex-direction: column;
     align-items: center;
     gap: 15px;
+    
 }
+
 
 
 
@@ -397,7 +404,7 @@ section.basic-info3-section .col:nth-of-type(1) {
     border-radius: 5px;
     font-size: 1rem;
     background-color: #C7eaf8;
-    color: white;
+    color: black;
 }
 
 .ContactSec button[type="submit"] {
