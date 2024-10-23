@@ -22,8 +22,6 @@
         <img src="images/circle solutions_logo_02.png" alt="Circle Solutions logo in black" id="logo1">
         <input type="checkbox" id="menuToggle" class="menu-toggle">
         <label for="menuToggle" class="menu-icon">
-            <!-- Hamburger icon -->
-            &#9776;
         </label>
         <div id="navBar" class="hidden">
             <ul>
@@ -31,16 +29,6 @@
                 <li><a href="#ServiceSec">Services</a></li>
                 <li><a href="#AboutSec">About</a></li>
                 <li><a href="#ContactSec">Contact</a></li>
-                <li class="dropdown">
-                    <form method="POST" action="">
-                        <select name="language" id="dropdown" onchange="this.form.submit()">
-                            <option value="index.php" <?php if ($lang=="eng" ) echo "selected" ; ?>>English</option>
-                            <option value="nederlands.php" <?php if ($lang=="nl" ) echo "selected" ; ?>>Nederlands
-                            </option>
-                            <option value="deutsch.php" <?php if ($lang=="de" ) echo "selected" ; ?>>Deutsch</option>
-                        </select>
-                    </form>
-                </li>
             </ul>
         </div>
     </header>
@@ -49,6 +37,21 @@
         <div class="HomeSec" id="HomeSec">
             <section>
                 <div class="opening container no-pad-x">
+                    <div class="languages">
+                        <div class="container">
+                            <div class="button-container">
+                                <a href="index.php">
+                                    <button class="dot-button" id="btn1">English</button>
+                                </a>
+                                <a href="nederlands.php">
+                                    <button class="dot-button" id="btn2">Dutch</button>
+                                </a>
+                                <a href="deutsch.php">
+                                    <button class="dot-button" id="btn3">German</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                     <h1>just connect the dots</h1>
                     <p>to develop software solutions that fit like a glove.</p>
                 </div>
