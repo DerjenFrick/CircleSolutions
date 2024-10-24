@@ -1,5 +1,6 @@
 <?php
-if($_GET['style'] == 'stylesDark.css'){
+//check is the style is set before accessing it.
+if(isset($_GET['style']) && $_GET['style'] == 'stylesDark.css'){
     $style = 'stylesDark.css';
     $style2 = 'styles.css';
 }
@@ -296,6 +297,7 @@ if($_GET['style'] == 'stylesDark.css'){
             ?>
 
                 <form action="#ContactSec" method="POST">
+                    <label for="name">Name</label>
                     <input type="text" name="name" placeholder="Enter your name" required>
                     <input type="email" name="email" placeholder="Enter a valid email address" required>
                     <textarea name="message" placeholder="Enter your message" rows="5" required></textarea>
