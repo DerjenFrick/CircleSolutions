@@ -450,7 +450,6 @@ section.basic-info3-section .col:nth-of-type(1) {
 
 .packages {
     display: flex;
-    grid-template-columns: repeat(5, 1fr);
     gap: 30px;
     color: #C7eaf8;
 }
@@ -468,7 +467,7 @@ h2 {
     padding: 25px;
     gap: 10px;
     background-color: #2a4756;
-    border-radius: 15%;
+    border-radius: 5%;
 }
 
 .iconPlaceholder {
