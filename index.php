@@ -316,7 +316,11 @@ if($_GET['style'] == 'stylesDark.css'){
 
                 </div>
         </section>
-        <footer></footer>
+        <footer>
+        <div class="AboutSec"><small class="subtext3">
+            &copy; 2024 Circle Solutions. All Rights Reserved.</small>
+        </div>
+        </footer>
     </main>
 </body>
 

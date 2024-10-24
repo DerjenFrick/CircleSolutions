@@ -275,6 +275,11 @@ if($_GET['style'] == 'stylesDark.css'){
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
 
             </div>
+        <footer>
+            <div class="AboutSec"><small class="subtext3">
+                &copy; 2024 Circle Solutions. All Rights Reserved.</small>
+            </div>
+        </footer>
     </main>
 </body>
 
