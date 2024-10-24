@@ -154,7 +154,7 @@ if(isset($_GET['style']) && $_GET['style'] == 'stylesDark.css'){
                         <div class="packages  ">
                             <div class="package1">
                                 <div class="package-title">
-                                    <img src="images/documentMan.jpg" alt="people in a workspace" class="iconPlaceholder packageContent">
+                                    <img src="images/documentMan.jpg" alt="people in a workspace" class="iconPlaceholder packageContent image-size-m">
                                     <h2>circle workspace</h2>
                                 </div>
                                 <p>
@@ -183,7 +183,7 @@ if(isset($_GET['style']) && $_GET['style'] == 'stylesDark.css'){
                             </div>
                             <div class="package2">
                                 <div class="package-title">
-                                    <img src="images/knowledge.jpg" alt="picture for circle D.O.t.S." class="iconPlaceholder packageContent">
+                                    <img src="images/knowledge.jpg" alt="picture for circle D.O.t.S." class="iconPlaceholder packageContent image-size-m">
                                     <h2>circle D.O.T.S.</h2>
                                 </div>
                                 <p>

@@ -449,9 +449,9 @@ section.basic-info3-section .col:nth-of-type(1) {
 }
 
 .packages {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(5, 1fr);
-
+    gap: 30px;
     color: #C7eaf8;
 }
 
@@ -471,22 +471,6 @@ h2 {
     border-radius: 15%;
 }
 
-.package1 {
-
-    grid-column: 2/3;
-
-}
-
-.package2 {
-
-
-    grid-column: 4/5;
-
-}
-
-
-
-
 .iconPlaceholder {
     width: 30%;
     border-radius: 1.2rem;
@@ -499,12 +483,7 @@ h2 {
 }
 
 .image-size-m {
-    width: 15%;
-
-}
-
-.bc-cyan {
-    background-color: rgba(220, 241, 249, 0.85);
+    width: 90px;
 }
 
 .socials {
@@ -633,4 +612,9 @@ input:checked+label:after {
     left: 5rem;
     transform: translateX(80%);
     background: linear-gradient(180deg, #777, #3a3a3a);
+}
+
+textarea
+{
+    resize: none;
 }
