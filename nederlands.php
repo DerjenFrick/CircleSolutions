@@ -182,49 +182,49 @@ if($_GET['style'] == 'stylesDark.css'){
             <h1>Over Ons</h1>
             <p>Wij zijn beepboop beep boop</p>
             <div class="employee-cards">
-                <div class="employee-card1">
-                    <div class="employee-photo"></div>
-                    <div class="employee-info">
-                        <p>Werknemer #1</p>
-                        <p>Freelancer</p>
+                    <div class="employee-card1">
+                        <img src="images/Raymond.jpg" alt="raymond the Ceo" class="employee-photo">
+                        <div class="employee-info">
+                            <p>Raymond</p>
+                            <p>directeur</p>
+                        </div>
+                    </div>
+                    <div class="employee-card2">
+                        <img src="images/Kevin.png" alt="Kevin the lead developer" class="employee-photo">
+                        <div class="employee-info">
+                            <p>Kevin</p>
+                            <p>hoofdontwikkelaar</p>
+                        </div>
+                    </div>
+                    <div class="employee-card3">
+                        <img src="images/Theresa.png" alt="" class="employee-photo">
+                        <div class="employee-info">
+                            <p>Theresa</p>
+                            <p>projectmanager</p>
+                        </div>
+                    </div>
+                    <div class="employee-card4">
+                       <img src="images/Sander.png" alt="" class="employee-photo">
+                        <div class="employee-info">
+                            <p>Sander</p>
+                            <p>ontwikkelaar</p>
+                        </div>
+                    </div>
+                    <div class="employee-card5">
+                       <img src="images/Rene.png" alt="" class="employee-photo">
+                        <div class="employee-info">
+                            <p>René </p>
+                            <p>specialist in cloudoplossingen</p>
+                        </div>
+                    </div>
+                    <div class="employee-card6">
+                        <img src="images/John.png" alt="" class="employee-photo">
+                        <div class="employee-info">
+                            <p>John</p>
+                            <p>ontwikkelaar en beveiligingsfunctionaris</p>
+                        </div>
                     </div>
                 </div>
-                <div class="employee-card2">
-                    <div class="employee-photo"></div>
-                    <div class="employee-info">
-                        <p>Werknemer #2</p>
-                        <p>Freelancer</p>
-                    </div>
-                </div>
-                <div class="employee-card3">
-                    <div class="employee-photo"></div>
-                    <div class="employee-info">
-                        <p>Werknemer #3</p>
-                        <p>Freelancer</p>
-                    </div>
-                </div>
-                <div class="employee-card4">
-                    <div class="employee-photo"></div>
-                    <div class="employee-info">
-                        <p>Werknemer #4</p>
-                        <p>Freelancer</p>
-                    </div>
-                </div>
-                <div class="employee-card5">
-                    <div class="employee-photo"></div>
-                    <div class="employee-info">
-                        <p>Werknemer #5</p>
-                        <p>Freelancer</p>
-                    </div>
-                </div>
-                <div class="employee-card6">
-                    <div class="employee-photo"></div>
-                    <div class="employee-info">
-                        <p>Werknemer #6</p>
-                        <p>Freelancer</p>
-                    </div>
-                </div>
-            </div>
         </div>
 
         <div class="ContactSec" id="ContactSec">

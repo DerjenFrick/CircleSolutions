@@ -184,49 +184,49 @@ if($_GET['style'] == 'stylesDark.css'){
             <h1>Über uns</h1>
             <p>Wir sind beepboop beep boop</p>
             <div class="employee-cards">
-                <div class="employee-card1">
-                    <div class="employee-photo"></div>
-                    <div class="employee-info">
-                        <p>Mitarbeiter #1</p>
-                        <p>Freelancer</p>
+                    <div class="employee-card1">
+                        <img src="images/Raymond.jpg" alt="raymond the Ceo" class="employee-photo">
+                        <div class="employee-info">
+                            <p>Raymond</p>
+                            <p>Vorsitzender</p>
+                        </div>
+                    </div>
+                    <div class="employee-card2">
+                        <img src="images/Kevin.png" alt="Kevin the lead developer" class="employee-photo">
+                        <div class="employee-info">
+                            <p>Kevin</p>
+                            <p>leitender Entwickler</p>
+                        </div>
+                    </div>
+                    <div class="employee-card3">
+                        <img src="images/Theresa.png" alt="" class="employee-photo">
+                        <div class="employee-info">
+                            <p>Theresa</p>
+                            <p>Projektmanager</p>
+                        </div>
+                    </div>
+                    <div class="employee-card4">
+                       <img src="images/Sander.png" alt="" class="employee-photo">
+                        <div class="employee-info">
+                            <p>Sander</p>
+                            <p>Entwickler</p>
+                        </div>
+                    </div>
+                    <div class="employee-card5">
+                       <img src="images/Rene.png" alt="" class="employee-photo">
+                        <div class="employee-info">
+                            <p>René </p>
+                            <p>Spezialist für Cloud-Lösungen</p>
+                        </div>
+                    </div>
+                    <div class="employee-card6">
+                        <img src="images/John.png" alt="" class="employee-photo">
+                        <div class="employee-info">
+                            <p>John</p>
+                            <p>Entwickler und Sicherheitsbeauftragter</p>
+                        </div>
                     </div>
                 </div>
-                <div class="employee-card2">
-                    <div class="employee-photo"></div>
-                    <div class="employee-info">
-                        <p>Mitarbeiter #2</p>
-                        <p>Freelancer</p>
-                    </div>
-                </div>
-                <div class="employee-card3">
-                    <div class="employee-photo"></div>
-                    <div class="employee-info">
-                        <p>Mitarbeiter #3</p>
-                        <p>Freelancer</p>
-                    </div>
-                </div>
-                <div class="employee-card4">
-                    <div class="employee-photo"></div>
-                    <div class="employee-info">
-                        <p>Mitarbeiter #4</p>
-                        <p>Freelancer</p>
-                    </div>
-                </div>
-                <div class="employee-card5">
-                    <div class="employee-photo"></div>
-                    <div class="employee-info">
-                        <p>Mitarbeiter #5</p>
-                        <p>Freelancer</p>
-                    </div>
-                </div>
-                <div class="employee-card6">
-                    <div class="employee-photo"></div>
-                    <div class="employee-info">
-                        <p>Mitarbeiter #6</p>
-                        <p>Freelancer</p>
-                    </div>
-                </div>
-            </div>
         </div>
 
         <div class="ContactSec" id="ContactSec">
