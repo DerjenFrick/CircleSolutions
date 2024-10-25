@@ -459,9 +459,8 @@ section.basic-info3-section .col:nth-of-type(1) {
 }
 
 .packages {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-
+    display: flex;
+    gap: 30px;
     color: #C7eaf8;
 }
 
@@ -478,23 +477,8 @@ h2 {
     padding: 25px;
     gap: 10px;
     background-color: #799DAB;
-    border-radius: 15%;
+    border-radius: 5%;
 }
-
-.package1 {
-
-    grid-column: 2/3;
-
-}
-
-.package2 {
-
-
-    grid-column: 4/5;
-
-}
-
-
 
 
 .iconPlaceholder {
