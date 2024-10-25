@@ -273,7 +273,7 @@ if(isset($_GET['style']) && $_GET['style'] == 'stylesDark.css'){
             <div class="ContactSec" id="ContactSec">
                 <h2>Contact Us</h2>
 
-                <?php
+                        <?php
             if (isset($_POST['language'])) {
                 $selectedLanguage = $_POST['language'];
                 header("Location: $selectedLanguage");
@@ -284,9 +284,9 @@ if(isset($_GET['style']) && $_GET['style'] == 'stylesDark.css'){
             $message = "";
 
             if ($_SERVER['REQUEST_METHOD'] == "POST") {
-                $name = filter_input(INPUT_POST, 'name');
+                $name = filter_input(INPUT_POST, 'name',);
                 $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
-                $message = filter_input(INPUT_POST, 'name');
+                $message = filter_input(INPUT_POST, 'message');
 
                 if (!empty($name) && !empty($email) && !empty($message)) {
                     echo "<p class='success'>Thank you, $name! Your message has been received. We will contact you at $email soon.</p>";
@@ -294,15 +294,20 @@ if(isset($_GET['style']) && $_GET['style'] == 'stylesDark.css'){
                     echo "<p class='error'>Please fill out all fields correctly.</p>";
                 }
             }
-            ?>
+        ?>
 
-                <form action="#ContactSec" method="POST">
-                    <label for="name">Name</label>
-                    <input type="text" name="name" placeholder="Enter your name" required>
-                    <input type="email" name="email" placeholder="Enter a valid email address" required>
-                    <textarea name="message" placeholder="Enter your message" rows="5" required></textarea>
-                    <button type="submit" name="submit">Submit</button>
-                </form>
+        <form action="#ContactSec" method="POST">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name" required>
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter a valid email address" required>
+
+                <label for="message">Message</label>
+                <textarea name="message" id="message" placeholder="Enter your message" rows="5" required></textarea>
+
+                <button type="submit" name="submit">Submit</button>
+            </form>
                 <div class="ContactInfo">
                     <div class="socials">
                         <a href="https://www.facebook.com"><img src="images/facebook.png" class="image-size-s"
