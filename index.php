@@ -56,13 +56,13 @@ if(isset($_GET['style']) && $_GET['style'] == 'stylesDark.css'){
                 <div class="opening container no-pad-x">
                 <div class="container">
                             <div class="button-container">
-                                <a href="index.php?style=styles.css">
+                            <a href="<?php echo 'index.php?style=' . $style ?>">
                                     <button class="dot-button" id="btn1">English</button>
                                 </a>
-                                <a href="nederlands.php?style=styles.css">
+                                <a href="<?php echo 'nederlands.php?style=' . $style ?>">
                                     <button class="dot-button" id="btn2">Dutch</button>
                                 </a>
-                                <a href="deutsch.php?style=styles.css">
+                                <a href="<?php echo 'deutsch.php?style=' . $style ?>">
                                     <button class="dot-button" id="btn3">German</button>
                                 </a>
                             </div>
