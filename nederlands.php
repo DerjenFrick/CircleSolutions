@@ -26,11 +26,11 @@ if (isset($_GET['style']) && $_GET['style'] == 'stylesDark.css') {
 
         if ($_SERVER['REQUEST_METHOD'] == "POST") {
             $lang = filter_input(INPUT_POST, "language");
-            
+
         }
         ?>
 
-        
+
         <a href="/"><img src="images/circle solutions_logo_02.png" alt="Circle Solutions logo in black" id="logo1"></a>
         <input type="checkbox" id="menuToggle" class="menu-toggle">
         <label for="menuToggle" class="menu-icon">
@@ -40,7 +40,7 @@ if (isset($_GET['style']) && $_GET['style'] == 'stylesDark.css') {
         <div id="navBar" class="hidden">
 
             <ul>
-                
+
                 <li><a href="#HomeSec">Startpagina</a></li>
                 <li><a href="#ServiceSec">Diensten</a></li>
                 <li><a href="#AboutSec">Over ons</a></li>
@@ -67,7 +67,7 @@ if (isset($_GET['style']) && $_GET['style'] == 'stylesDark.css') {
 
     <main>
         <div class="HomeSec" id="HomeSec">
-            <section>
+            <section class="bg">
                 <div class="opening container no-pad-x">
                     <!-- <div class="container">
                         <div class="button-container">
@@ -95,8 +95,10 @@ if (isset($_GET['style']) && $_GET['style'] == 'stylesDark.css') {
                             </div>
                             <div class="col">
                                 <div class="vision-mission">
-                                    <p>Wij zien een wereld voor ons waarin het gebruik van software net zo gemakkelijk en natuurlijk is als ademen.</p>
-                                    <p>Ons doel is om software te ontwikkelen die past bij de individuele kwaliteiten van individuele behoeften.
+                                    <p>Wij zien een wereld voor ons waarin het gebruik van software net zo gemakkelijk
+                                        en natuurlijk is als ademen.</p>
+                                    <p>Ons doel is om software te ontwikkelen die past bij de individuele kwaliteiten
+                                        van individuele behoeften.
                                     </p>
                                     <p>Mensen en bedrijven in staat stellen om te werken met softwareoplossingen.</p>
                                 </div>
@@ -138,8 +140,9 @@ if (isset($_GET['style']) && $_GET['style'] == 'stylesDark.css') {
                             <div class="basic-info3">
                                 <div class="subtext3">
                                     <h2>praktisch</h2>
-                                    <p>We houden de dingen graag eenvoudig. <br> Geen grote gebaren, geen theater of veelbelovende
-                                    utopieën.</p>
+                                    <p>We houden de dingen graag eenvoudig. <br> Geen grote gebaren, geen theater of
+                                        veelbelovende
+                                        utopieën.</p>
                                     <h2>gebruiksvriendelijk</h2>
                                     <p>Met onze oplossing bouwen we bruggen tussen gebruikers en systemen.</p>
                                     <h2>kwaliteit gedreven</h2>
@@ -178,21 +181,23 @@ if (isset($_GET['style']) && $_GET['style'] == 'stylesDark.css') {
                                 </p>
                                 <p>
                                     Communicatie en informatie:
-                                    Bekijk ongelezen e-mails, afspraken, nieuws en meer in één oogopslag in Circle Workspace.
+                                    Bekijk ongelezen e-mails, afspraken, nieuws en meer in één oogopslag in Circle
+                                    Workspace.
                                 </p>
                                 <p>
                                     Documentbeheer:
-                                    Centraliseer documenten van Office 365, OneDrive, SharePoint en meer voor eenvoudig online of offline beheer.
+                                    Centraliseer documenten van Office 365, OneDrive, SharePoint en meer voor eenvoudig
+                                    online of offline beheer.
                                     of
                                     offline
                                     toegang.
 
                                 </p>
                                 <p>
-                                     Prijzen: 1-50 gebruikers €140,00 per maand, 51-500 gebruikers €760,00 per maand
+                                    Prijzen: 1-50 gebruikers €140,00 per maand, 51-500 gebruikers €760,00 per maand
                                 </p>
                                 <p>
-                                     Bel: +31 6 567788234 of e-mail : info@circlesolutions.com
+                                    Bel: +31 6 567788234 of e-mail : info@circlesolutions.com
                                 </p>
                             </div>
                             <div class="package2">
@@ -202,30 +207,33 @@ if (isset($_GET['style']) && $_GET['style'] == 'stylesDark.css') {
                                     <h2>circle D.O.T.S.</h2>
                                 </div>
                                 <p>
-                                Interne communicatie:
-                                    Houd iedereen op de hoogte door nieuws efficiënt te richten en te verspreiden, zorg voor
+                                    Interne communicatie:
+                                    Houd iedereen op de hoogte door nieuws efficiënt te richten en te verspreiden, zorg
+                                    voor
                                     afstemming
                                     op
                                     de organisatie
                                 </p>
                                 <p>
-                                Verbinden en betrekken:
-                                    Stel teams in staat om met elkaar in contact te komen en samen te werken door Kanalen en Pagina's te maken voor projecten
+                                    Verbinden en betrekken:
+                                    Stel teams in staat om met elkaar in contact te komen en samen te werken door
+                                    Kanalen en Pagina's te maken voor projecten
                                     of
                                     interesses, wat vertrouwen en teamwork bevordert.
                                 </p>
                                 <p>
 
-                                Kennisbeheer:
-                                    Centraliseer bronnen en informatie voor eenvoudige toegang, zodat u minder tijd kwijt bent aan zoeken
+                                    Kennisbeheer:
+                                    Centraliseer bronnen en informatie voor eenvoudige toegang, zodat u minder tijd
+                                    kwijt bent aan zoeken
                                     en
                                     productiviteit verhogen.
                                 </p>
                                 <p>
-                                Prijzen: 1-50 gebruikers €140,00 per maand, 51-500 gebruikers €760,00 per maand
+                                    Prijzen: 1-50 gebruikers €140,00 per maand, 51-500 gebruikers €760,00 per maand
                                 </p>
                                 <p>
-                                Bel: +31 6 567788234 of e-mail : info@circlesolutions.com
+                                    Bel: +31 6 567788234 of e-mail : info@circlesolutions.com
                                 </p>
                             </div>
                         </div>

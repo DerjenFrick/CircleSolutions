@@ -81,6 +81,12 @@ footer {
     ;
 }
 
+.bg {
+    background-image: url(images/bg-main.png);
+    background-position: 30%;
+    background-size: 120%;
+}
+
 .HomeSec {
     grid-template-rows: repeat(4, 1fr);
     align-items: center;
@@ -88,7 +94,7 @@ footer {
     flex-direction: row;
     margin: 0;
     padding: 0;
-    width: 100%;
+    width: 100%
 }
 
 .opening {
@@ -116,6 +122,7 @@ footer {
     flex-direction: row;
     width: 100%;
     border-radius: 20px;
+    margin-top: -1%;
 
 }
 
@@ -165,6 +172,10 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
+    .bg {
+        background-size: 200%;
+    }
+    
     .basic-info1 .row {
         flex-direction: column-reverse;
     }
@@ -589,8 +600,8 @@ h2 {
 }
 
 .dot-button img {
-   height: 20px;
-   width: 30px;
+    height: 20px;
+    width: 30px;
 }
 
 input {
@@ -607,7 +618,6 @@ input:checked+label:after {
     background: linear-gradient(180deg, #777, #3a3a3a);
 }
 
-textarea
-{
+textarea {
     resize: none;
 }

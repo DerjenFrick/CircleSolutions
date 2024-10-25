@@ -66,7 +66,7 @@ if (isset($_GET['style']) && $_GET['style'] == 'stylesDark.css') {
 
     <main>
         <div class="HomeSec" id="HomeSec">
-            <section>
+            <section class="bg">
                 <div class="opening container no-pad-x">
                     <!-- <div class="container">
                         <div class="button-container">

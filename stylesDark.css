@@ -81,6 +81,12 @@ footer {
     ;
 }
 
+.bg {
+    background-image: url(images/bg-dark.png);
+    background-position: 30%;
+    background-size: 120%;
+}
+
 .HomeSec {
     grid-template-rows: repeat(4, 1fr);
     align-items: center;
@@ -116,7 +122,7 @@ footer {
     flex-direction: row;
     width: 100%;
     border-radius: 20px;
-
+    margin-top: -1%;
 }
 
 .basic-info1 div:nth-child(1) {
@@ -165,6 +171,10 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
+    .bg {
+        background-size: 200%;
+    }
+    
     .basic-info1 .row {
         flex-direction: column-reverse;
     }
@@ -290,8 +300,8 @@ section.basic-info3-section .col:nth-of-type(1) {
     justify-content: center;
     padding: 0 20px;
 }
-.employee-cards p
-{
+
+.employee-cards p {
     margin: 0;
 }
 
@@ -310,14 +320,14 @@ section.basic-info3-section .col:nth-of-type(1) {
 }
 
 .employee-card1 {
-    
+
     grid-column: 2/3;
     grid-row: 1/2;
 
 }
 
 .employee-card2 {
-    
+
     grid-column: 3/4;
     grid-row: 1/2;
 
@@ -325,21 +335,21 @@ section.basic-info3-section .col:nth-of-type(1) {
 }
 
 .employee-card3 {
-    
+
     grid-column: 4/5;
     grid-row: 1/2;
 
 }
 
 .employee-card4 {
-    
+
     grid-column: 2/3;
     grid-row: 2/3;
 
 }
 
 .employee-card5 {
-    
+
     grid-column: 3/4;
     grid-row: 2/3;
 
@@ -347,7 +357,7 @@ section.basic-info3-section .col:nth-of-type(1) {
 }
 
 .employee-card6 {
-    
+
     grid-column: 4/5;
     grid-row: 2/3;
 
@@ -383,7 +393,7 @@ section.basic-info3-section .col:nth-of-type(1) {
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    
+
 }
 
 
@@ -583,7 +593,7 @@ h2 {
     }
 
     #navBar ul {
-        flex-direction: column!important;
+        flex-direction: column !important;
     }
 
     #navBar ul li {
@@ -597,8 +607,8 @@ h2 {
         text-decoration: none;
     }
 }
-.button-container
- {
+
+.button-container {
     display: flex;
     justify-content: space-around;
     margin-top: 10%;
@@ -611,21 +621,20 @@ h2 {
 }
 
 .dot-button img {
-   height: 20px;
-   width: 30px;
+    height: 20px;
+    width: 30px;
 }
 
-input
-{
+input {
     visibility: visible;
 }
-input:checked + label
-{
+
+input:checked+label {
     background-color: #242424;
 }
-input:checked + label:after
-{
+
+input:checked+label:after {
     left: 5rem;
     transform: translateX(80%);
-    background: linear-gradient(180deg,#777, #3a3a3a);
+    background: linear-gradient(180deg, #777, #3a3a3a);
 }

@@ -26,11 +26,11 @@ if (isset($_GET['style']) && $_GET['style'] == 'stylesDark.css') {
 
         if ($_SERVER['REQUEST_METHOD'] == "POST") {
             $lang = filter_input(INPUT_POST, "language");
-            
+
         }
         ?>
 
-        
+
         <a href="/"><img src="images/circle solutions_logo_02.png" alt="Circle Solutions logo in black" id="logo1"></a>
         <input type="checkbox" id="menuToggle" class="menu-toggle">
         <label for="menuToggle" class="menu-icon">
@@ -66,7 +66,7 @@ if (isset($_GET['style']) && $_GET['style'] == 'stylesDark.css') {
 
     <main>
         <div class="HomeSec" id="HomeSec">
-            <section>
+            <section class="bg">
                 <div class="opening container no-pad-x">
                     <!-- <div class="container">
                         <div class="button-container">
