@@ -72,7 +72,7 @@ header {
 }
 
 #logo1 {
-    width: 10%;
+    width: 35%;
 }
 
 footer {
@@ -605,21 +605,16 @@ h2 {
     gap: 10%;
 }
 
-.dot-button 
-{
-    background-color: #799dab;
-    color: white;
-    padding: 15px 30px;
-    font-size: 16px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
+.dot-button {
+    border: 0;
+    background: transparent;
 }
 
-.dot-button:hover 
-{
-    background-color: #2a4756;
+.dot-button img {
+   height: 20px;
+   width: 30px;
 }
+
 input
 {
     visibility: visible;

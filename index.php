@@ -1,14 +1,12 @@
 <?php
 //check is the style is set before accessing it.
-if(isset($_GET['style']) && $_GET['style'] == 'stylesDark.css'){
+if (isset($_GET['style']) && $_GET['style'] == 'stylesDark.css') {
     $style = 'stylesDark.css';
     $style2 = 'styles.css';
-}
- 
- else{
+} else {
     $style = 'styles.css';
     $style2 = 'stylesDark.css';
- }
+}
 ?>
 
 <!DOCTYPE html>
@@ -28,24 +26,40 @@ if(isset($_GET['style']) && $_GET['style'] == 'stylesDark.css'){
 
         if ($_SERVER['REQUEST_METHOD'] == "POST") {
             $lang = filter_input(INPUT_POST, "language");
-
+            
         }
         ?>
 
-        <img src="images/circle solutions_logo_02.png" alt="Circle Solutions logo in black" id="logo1">
+        
+        <a href="/"><img src="images/circle solutions_logo_02.png" alt="Circle Solutions logo in black" id="logo1"></a>
         <input type="checkbox" id="menuToggle" class="menu-toggle">
         <label for="menuToggle" class="menu-icon">
             <!-- Hamburger icon -->
             &#9776;
         </label>
         <div id="navBar" class="hidden">
-            
+
             <ul>
-            <li><a href="?style=<?php echo $style2 ?>">Light/Dark mode</a></li>
                 <li><a href="#HomeSec">Home</a></li>
                 <li><a href="#ServiceSec">Services</a></li>
                 <li><a href="#AboutSec">About</a></li>
                 <li><a href="#ContactSec">Contact</a></li>
+                <li><a href="?style=<?php echo $style2 ?>">Theme</a></li>
+                <li>
+                    <a href="<?php echo 'index.php?style=' . $style ?>">
+                        <button class="dot-button" id="btn1"><img src="images/UK.svg" alt="English"></button>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?php echo 'nederlands.php?style=' . $style ?>">
+                        <button class="dot-button" id="btn2"><img src="images/NL.svg" alt="Nederlands"></button>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?php echo 'deutsch.php?style=' . $style ?>">
+                        <button class="dot-button" id="btn3"><img src="images/DE.svg" alt="Deutsch"></button>
+                    </a>
+                </li>
             </ul>
         </div>
     </header>
@@ -54,19 +68,19 @@ if(isset($_GET['style']) && $_GET['style'] == 'stylesDark.css'){
         <div class="HomeSec" id="HomeSec">
             <section>
                 <div class="opening container no-pad-x">
-                <div class="container">
-                            <div class="button-container">
+                    <!-- <div class="container">
+                        <div class="button-container">
                             <a href="<?php echo 'index.php?style=' . $style ?>">
-                                    <button class="dot-button" id="btn1">English</button>
-                                </a>
-                                <a href="<?php echo 'nederlands.php?style=' . $style ?>">
-                                    <button class="dot-button" id="btn2">Dutch</button>
-                                </a>
-                                <a href="<?php echo 'deutsch.php?style=' . $style ?>">
-                                    <button class="dot-button" id="btn3">German</button>
-                                </a>
-                            </div>
+                                <button class="dot-button" id="btn1">English</button>
+                            </a>
+                            <a href="<?php echo 'nederlands.php?style=' . $style ?>">
+                                <button class="dot-button" id="btn2">Dutch</button>
+                            </a>
+                            <a href="<?php echo 'deutsch.php?style=' . $style ?>">
+                                <button class="dot-button" id="btn3">German</button>
+                            </a>
                         </div>
+                    </div> -->
                     <h1>just connect the dots</h1>
                     <p>to develop software solutions that fit like a glove.</p>
                 </div>
@@ -154,7 +168,8 @@ if(isset($_GET['style']) && $_GET['style'] == 'stylesDark.css'){
                         <div class="packages  ">
                             <div class="package1">
                                 <div class="package-title">
-                                    <img src="images/documentMan.jpg" alt="people in a workspace" class="iconPlaceholder packageContent image-size-m">
+                                    <img src="images/documentMan.jpg" alt="people in a workspace"
+                                        class="iconPlaceholder packageContent image-size-m">
                                     <h2>circle workspace</h2>
                                 </div>
                                 <p>
@@ -178,12 +193,13 @@ if(isset($_GET['style']) && $_GET['style'] == 'stylesDark.css'){
                                     Pricing: 1-50 users €140,00 per month, 51-500 users €760,00 per month
                                 </p>
                                 <p>
-                                    Call: +31 6 567788234 or e-mail :  info@circlesolutions.com
+                                    Call: +31 6 567788234 or e-mail : info@circlesolutions.com
                                 </p>
                             </div>
                             <div class="package2">
                                 <div class="package-title">
-                                    <img src="images/knowledge.jpg" alt="picture for circle D.O.t.S." class="iconPlaceholder packageContent image-size-m">
+                                    <img src="images/knowledge.jpg" alt="picture for circle D.O.t.S."
+                                        class="iconPlaceholder packageContent image-size-m">
                                     <h2>circle D.O.T.S.</h2>
                                 </div>
                                 <p>
@@ -210,7 +226,7 @@ if(isset($_GET['style']) && $_GET['style'] == 'stylesDark.css'){
                                     Pricing: 1-50 users €140,00 per month, 51-500 users €760,00 per month
                                 </p>
                                 <p>
-                                    Call: +31 6 567788234 or e-mail :  info@circlesolutions.com
+                                    Call: +31 6 567788234 or e-mail : info@circlesolutions.com
                                 </p>
                             </div>
                         </div>
@@ -244,14 +260,14 @@ if(isset($_GET['style']) && $_GET['style'] == 'stylesDark.css'){
                         </div>
                     </div>
                     <div class="employee-card4">
-                       <img src="images/Sander.png" alt="" class="employee-photo">
+                        <img src="images/Sander.png" alt="" class="employee-photo">
                         <div class="employee-info">
                             <p>Sander</p>
                             <p>developer</p>
                         </div>
                     </div>
                     <div class="employee-card5">
-                       <img src="images/Rene.png" alt="" class="employee-photo">
+                        <img src="images/Rene.png" alt="" class="employee-photo">
                         <div class="employee-info">
                             <p>René </p>
                             <p>cloud solution specialist</p>
@@ -273,41 +289,41 @@ if(isset($_GET['style']) && $_GET['style'] == 'stylesDark.css'){
             <div class="ContactSec" id="ContactSec">
                 <h2>Contact Us</h2>
 
-                        <?php
-            if (isset($_POST['language'])) {
-                $selectedLanguage = $_POST['language'];
-                header("Location: $selectedLanguage");
-                exit();
-            }
-            $name = "";
-            $email = "";
-            $message = "";
-
-            if ($_SERVER['REQUEST_METHOD'] == "POST") {
-                $name = filter_input(INPUT_POST, 'name',);
-                $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
-                $message = filter_input(INPUT_POST, 'message');
-
-                if (!empty($name) && !empty($email) && !empty($message)) {
-                    echo "<p class='success'>Thank you, $name! Your message has been received. We will contact you at $email soon.</p>";
-                } else {
-                    echo "<p class='error'>Please fill out all fields correctly.</p>";
+                <?php
+                if (isset($_POST['language'])) {
+                    $selectedLanguage = $_POST['language'];
+                    header("Location: $selectedLanguage");
+                    exit();
                 }
-            }
-        ?>
+                $name = "";
+                $email = "";
+                $message = "";
 
-        <form action="#ContactSec" method="POST">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                if ($_SERVER['REQUEST_METHOD'] == "POST") {
+                    $name = filter_input(INPUT_POST, 'name', );
+                    $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
+                    $message = filter_input(INPUT_POST, 'message');
 
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Enter a valid email address" required>
+                    if (!empty($name) && !empty($email) && !empty($message)) {
+                        echo "<p class='success'>Thank you, $name! Your message has been received. We will contact you at $email soon.</p>";
+                    } else {
+                        echo "<p class='error'>Please fill out all fields correctly.</p>";
+                    }
+                }
+                ?>
 
-                <label for="message">Message</label>
-                <textarea name="message" id="message" placeholder="Enter your message" rows="5" required></textarea>
+                <form action="#ContactSec" method="POST">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
 
-                <button type="submit" name="submit">Submit</button>
-            </form>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter a valid email address" required>
+
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" placeholder="Enter your message" rows="5" required></textarea>
+
+                    <button type="submit" name="submit">Submit</button>
+                </form>
                 <div class="ContactInfo">
                     <div class="socials">
                         <a href="https://www.facebook.com"><img src="images/facebook.png" class="image-size-s"
@@ -324,9 +340,9 @@ if(isset($_GET['style']) && $_GET['style'] == 'stylesDark.css'){
                 </div>
         </section>
         <footer>
-        <div class="AboutSec"><small class="subtext3">
-            &copy; 2024 Circle Solutions. All Rights Reserved.</small>
-        </div>
+            <div class="AboutSec"><small class="subtext3">
+                    &copy; 2024 Circle Solutions. All Rights Reserved.</small>
+            </div>
         </footer>
     </main>
 </body>
